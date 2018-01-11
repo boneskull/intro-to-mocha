@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Testing Node.js with Mocha</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent"/>
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
+
+  <link rel="stylesheet" href="css/theme.css" id="theme">
+
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/css/zenburn.min.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    (function () {
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href =
+        window.location.search.match(/print-pdf/gi)
+          ? 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/print/pdf.min.css'
+          : 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    }());
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+  <div class="slides">
+
+    <% _.forEach(slides, function(slide) { %> <% if (!_.isArray(slide)) { %> <%=
+    section(slide) %> <% } %> <% if (_.isArray(slide)) { %>
+    <section>
+      <% _.forEach(slide, function(verticalslide) { %> <%=
+      section(verticalslide) %> <% }); %>
+    </section>
+    <% } %> <% }); %>
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
