@@ -6,13 +6,14 @@
 
 This repo was created with [generator-reveal](https://npm.im/generator-reveal) and [Yeoman](http://yeoman.io/), then gutted like a fish. 
 
-## Examples
-
-Completed example code lives in `example/`.
-
 ## Development
 
-Slides are in Markdown and live in `slides/`.
+- `npm start` will start a dev server with livereload support.
+
+### Organization
+
+- Completed example code lives in `example/`.
+- Slides are in Markdown and live in `slides/`.
 
 ### To Create New Slide
 

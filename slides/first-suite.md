@@ -6,7 +6,6 @@
 <!-- .element: class="fragment" -->
 ```js
 // test/request-time.spec.js
-
 describe('requestTime middleware', function () {
   // stuff goes here
 });

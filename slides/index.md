@@ -1,6 +1,10 @@
-# Testing Node.js with [Mocha](https://mochajs.org) 
+# Testing Node.js with
 
-![Mocha Logo](https://cldup.com/S9uQ-cOLYz.svg)
+[![Mocha Logo](resources/mocha.png)](https://mochajs.org)
 
-A presentation for [PDXNode](http://pdxnode.org)  
-January 11, 2018 
+*A presentation for [PDXNode](http://pdxnode.org)*  
+*January 11, 2018* 
+
+note:
+
+Introduce yourself!

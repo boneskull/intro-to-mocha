@@ -1,14 +1,11 @@
-## The Obligatory Contrived Example
+## Obligatory Contrived Example
 
-### Our Middleware Under Test
 ```js
-/**
- * @file lib/request-time.js
- */
+// lib/request-time.js
 
 /**
- * Adds a `requestTime` property to the Request object with 
- * a timestamp
+ * Express middleware; adds a timestamp `requestTime` property 
+ * to the incoming Request object
  */
 module.exports = (req, res, next) => {
   req.requestTime = Date.now();

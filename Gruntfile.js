@@ -11,8 +11,8 @@ module.exports = grunt => {
         files: [
           'index.html',
           'slides/{,*/}*.{md,html}',
-          'js/*.js',
-          'css/*.css',
+          'js/**',
+          'css/**',
           'resources/**'
         ]
       },
@@ -26,62 +26,18 @@ module.exports = grunt => {
     connect: {
       livereload: {
         options: {
-          port: 9000,
+          useAvailablePort: true,
           base: '.',
           open: true,
-          livereload: true
+          livereload: true,
+          port: 9111
         }
-      }
-    },
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc'
-      },
-      all: ['js/*.js']
-    },
-    copy: {
-      dist: {
-        files: [
-          {
-            expand: true,
-            src: [
-              'slides/**',
-              'bower_components/**',
-              'js/**',
-              'css/*.css',
-              'resources/**'
-            ],
-            dest: 'dist/'
-          }, {
-            expand: true,
-            src: ['index.html'],
-            dest: 'dist/',
-            filter: 'isFile'
-          }
-        ]
-      }
-    },
-    buildcontrol: {
-      options: {
-        dir: 'dist',
-        commit: true,
-        push: true,
-        message: 'Built from %sourceCommit% on branch %sourceBranch%'
-      },
-      pages: {
-        options: {
-          remote: '<%= pkg.repository.url %>',
-          branch: 'gh-pages'
-        }
-      }
-    },
-    semistandard: {
-      app: {
-        src: '{,lib/}*.js'
       }
     }
   });
+
   require('load-grunt-tasks')(grunt);
+
   grunt.registerTask('buildIndex',
     'Build index.html from templates/_index.html and slides/list.json.',
     () => {
@@ -91,33 +47,20 @@ module.exports = grunt => {
       const html = grunt.template.process(indexTemplate, {
         data: {
           slides: slides,
-          section: function (slide) {
-            return grunt.template.process(sectionTemplate, {
-              data: {
-                slide: slide
-              }
-            });
-          }
+          section: slide => grunt.template.process(sectionTemplate, {
+            data: {
+              slide: slide
+            }
+          })
         }
       });
       return grunt.file.write('index.html', html);
     });
 
-  grunt.registerTask('test', '*Lint* javascript and coffee files.', [
-    'semistandard'
-  ]);
-
   grunt.registerTask('serve',
-    'Run presentation locally and start watch process (living document).',
-    ['buildIndex', 'connect:livereload', 'watch']);
+    'Run presentation locally and start watch process (living document).', [
+      'buildIndex', 'connect', 'watch'
+    ]);
 
-  grunt.registerTask('dist',
-    'Save presentation files to *dist* directory.',
-    ['test', 'buildIndex', 'copy']);
-
-  grunt.registerTask('deploy',
-    'Deploy to Github Pages',
-    ['dist', 'buildcontrol']);
-
-  return grunt.registerTask('default', ['test', 'serve']);
+  return grunt.registerTask('default', ['serve']);
 };

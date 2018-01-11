@@ -6,13 +6,13 @@
   "devDependencies": {
     "generator-reveal": "^1.0.0",
     "grunt": "^1.0.0",
-    "grunt-build-control": "^0.7.1",
     "grunt-contrib-connect": "^1.0.2",
-    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-semistandard": "^1.0.6",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
     "load-grunt-tasks": "^3.5.2",
     "semistandard": "^12.0.0",
+    "snazzy": "^7.0.0",
     "yo": "^2.0.0"
   },
   "engines": {
@@ -20,10 +20,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:boneskull/intro-to-mocha.git"
+    "url": "https://github.com/boneskull/intro-to-mocha.git"
   },
   "scripts": {
-    "test": "grunt test",
-    "new-slide": "yo reveal:slide --markdown=true"
+    "test": "semistandard --verbose | snazzy",
+    "new-slide": "yo reveal:slide --markdown=true",
+    "precommit": "lint-staged && grunt buildIndex && git add index.html",
+    "start": "grunt"
+  },
+  "lint-staged": {
+    "*.js": [
+      "semistandard --verbose --fix | snazzy",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "reveal.js": "^3.6.0"
   }
 }

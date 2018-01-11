@@ -1,9 +1,3 @@
-## Mocha is a *testing framework.*
+<!-- .slide: data-background-image="resources/jj-ying-236821.jpg" -->
 
-### Mocha works in: 
-<!-- .element: class="fragment" --> 
-
-- Node.js 
-<!-- .element: class="fragment" -->
-- and modern browsers 
-<!-- .element: class="fragment" -->
+# Mocha is a *testing framework.*
