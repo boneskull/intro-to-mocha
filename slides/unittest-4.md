@@ -1,9 +1,7 @@
-## Your First Test (4/6)
-
-Mocha can now run our test:
+## A Unit Test (4/6)
 
 ```
-$ mocha
+$ node_modules/.bin/mocha
   requestTime middleware
     1) should add a timestamp `requestTime` prop to `req`
 
@@ -16,6 +14,14 @@ $ mocha
      TypeError: next is not a function
       at module.exports (lib/request-time.js:11:3)
       at Context.<anonymous> (test/request-time.spec.js:11:5)
+      ...
 ``` 
 
-Oops.
+*Oops.*
+<!-- .element: class="fragment" -->
+
+note:
+
+- mocha's output
+- failure should show stack trace
+

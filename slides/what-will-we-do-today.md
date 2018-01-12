@@ -1,3 +1,0 @@
-# TESTING "FUN"DAMENTALS
-
-Get it?
