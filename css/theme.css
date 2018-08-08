@@ -3,7 +3,7 @@
  *
  * By Hakim El Hattab, http://hakim.se
  */
-@import url(https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/font/source-sans-pro/source-sans-pro.min.css);
+ @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans');
 
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fffcdd;
@@ -17,7 +17,7 @@ body {
 }
 
 .reveal {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "IBM Plex Sans", Helvetica, sans-serif;
   font-size: 42px;
   font-weight: normal;
   color: #2e2d2b;
@@ -45,7 +45,6 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #2e2d2b;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
@@ -66,9 +65,6 @@ body {
 
 .reveal h4 {
   font-size: 1em;
-}
-
-.reveal h1 {
 }
 
 /*********************************************
@@ -108,10 +104,6 @@ body {
 
 .reveal ol {
   list-style-type: decimal;
-}
-
-.reveal ul {
-  /*list-style-type: none;*/
 }
 
 .reveal ul ul,
@@ -165,7 +157,7 @@ body {
 }
 
 .reveal code {
-  font-family: monospace;
+  font-family: "IBM Plex Mono", monospace;
   text-transform: none;
 }
 
