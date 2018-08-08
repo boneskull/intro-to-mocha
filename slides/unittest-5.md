@@ -3,7 +3,7 @@
 [requestTime source](#/13)
 
 ```js
-it('should add a timestamp `requestTime` prop to `req`', 
+it('should add a timestamp `requestTime` prop to `req`',
   function () {
   // requestTime() expects an object, any arg,
   // and finally a callback
