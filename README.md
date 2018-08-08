@@ -4,7 +4,7 @@
 
 ## Info
 
-This repo was created with [generator-reveal](https://npm.im/generator-reveal) and [Yeoman](http://yeoman.io/), then gutted like a fish. 
+This repo was created with [generator-reveal](https://npm.im/generator-reveal) and [Yeoman](http://yeoman.io/), then gutted like a fish.
 
 ## Development
 
@@ -23,4 +23,4 @@ $ npm run new-slide "<INSERT SLIDE TITLE HERE>"
 
 ## License
 
-© 2018 [Christopher Hiller](https://boneskull.com).  Licensed Apache-2.0 
+© 2018 [Christopher Hiller](https://boneskull.com).  Licensed Apache-2.0

@@ -6,6 +6,7 @@
 ```shell
 $ npm install supertest -D
 ```
+
 </div>
 <!-- .element: class="fragment" -->
 
@@ -15,6 +16,7 @@ $ npm install supertest -D
 ```shell
 $ npm install express
 ```
+
 </div>
 <!-- .element: class="fragment" -->
 

@@ -2,9 +2,8 @@
 
 # Mocha is versatile.
 
-
 note:
 
 - will bend
 - entire user-facing API can be swapped out
-- customizable 
+- customizable

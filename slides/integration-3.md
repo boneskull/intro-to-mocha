@@ -7,7 +7,7 @@ const app = require('../app');
 const request = require('supertest');
 
 describe('GET /unix-timestamp', function () {
-  it('should respond with JSON object containing timestamp', 
+  it('should respond with JSON object containing timestamp',
   function (done) {
     // assertion goes here
   });
@@ -15,5 +15,6 @@ describe('GET /unix-timestamp', function () {
 ```
 
 note:
+
 - explain line-by-line
 - server isn't actually occupying a port

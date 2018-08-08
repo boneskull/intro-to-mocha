@@ -7,9 +7,10 @@
 const assert = value => {
   if (!value) {
     throw new Error('assertion failure!');
-  } 
+  }
 };
 ```
+
 <!-- .element: class="fragment" -->
 
 note:

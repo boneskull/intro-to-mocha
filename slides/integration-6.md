@@ -1,9 +1,6 @@
-##  integration-6
-
-This is a new Markdown slide
 ## An Integration Test
 
-```
+```shell
 $ node_modules/.bin/mocha
 
   GET /unix-timestamp

@@ -3,7 +3,7 @@
 ### "Nodeback" style
 
 ```js
-it('should respond with JSON object containing timestamp', 
+it('should respond with JSON object containing timestamp',
   function (done) {
     request(app).get('/unix-timestamp')
       .expect(200).end((err, res) => {
@@ -17,7 +17,8 @@ it('should respond with JSON object containing timestamp',
 });
 ```
 
-note: 
+note:
+
 don't forget to highlight async nature
 
 **next slide**: promise style

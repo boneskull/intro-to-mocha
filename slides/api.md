@@ -4,6 +4,7 @@
 <!-- .element: class="fragment" -->
 
 note:
+
 - doesn't even use its own namespace
 - you don't do globals in Node.js!!
 - for "developer ergonomics": reduce boilerplate

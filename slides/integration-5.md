@@ -3,7 +3,7 @@
 ### Promise Style
 
 ```js
-it('should respond with JSON object containing timestamp', 
+it('should respond with JSON object containing timestamp',
   function () {
     return request(app).get('/unix-timestamp')
       .expect(200)
@@ -13,5 +13,6 @@ it('should respond with JSON object containing timestamp',
 });
 ```
 
-note: 
+note:
+
 let's run it

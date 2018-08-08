@@ -11,6 +11,7 @@ We also need our middleware.
 const assert = require('assert'); 
 const requestTime = require('../lib/request-time');
 ```
+
 <!-- .element: class="fragment" -->
 
 note:
@@ -25,5 +26,4 @@ note:
   - must
   - etc
  
-
 **next**: create test within suite

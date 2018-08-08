@@ -1,6 +1,6 @@
 ## How To Install Mocha
 
-To add Mocha as a development dependency: 
+To add Mocha as a development dependency:
 
 ```shell
 $ cd /path/to/my/project

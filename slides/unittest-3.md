@@ -2,7 +2,8 @@
 
 ```js
 describe('requestTime middleware', function () {
-  it('should add a timestamp `requestTime` prop to `req`', function () {
+  it('should add a timestamp `requestTime` prop to `req`',
+    function () {
     const req = {};
     requestTime(req);
 
