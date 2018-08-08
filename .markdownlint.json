@@ -1,0 +1,10 @@
+{
+  "no-inline-html": false,
+  "first-heading-h1": false,
+  "first-line-h1": false,
+  "commands-show-output": false,
+  "heading-increment": false,
+  "no-bare-urls": false,
+  "no-trailing-punctuation": false,
+  "line-length": false
+}
