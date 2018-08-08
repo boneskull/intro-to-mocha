@@ -4,6 +4,7 @@
   "private": true,
   "license": "Apache-2.0",
   "devDependencies": {
+    "generator-reveal": "^1.0.0",
     "grunt": "^1.0.3",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-watch": "^1.1.0",
